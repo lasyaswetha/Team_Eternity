@@ -8,6 +8,7 @@ long x;
 long y;
 long z;  
 
+
 void setup()
 {
   Serial.begin(9600);
@@ -22,6 +23,8 @@ void setup()
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
 }
+
+
 void loop()
 {
   x = analogRead(xPin);  
@@ -53,6 +56,8 @@ right();
 else
 stop_();
 }
+
+
 void stop_()
 {
   Serial.println("");
@@ -62,6 +67,8 @@ void stop_()
   digitalWrite(D3, LOW);
   digitalWrite(D4, LOW);
 }
+
+
 void forward()
 {
   Serial.println("");
@@ -71,6 +78,8 @@ void forward()
   digitalWrite(D3, HIGH);
   digitalWrite(D4, LOW);
 }
+
+
 void backward()
 {
   Serial.println("");
@@ -80,6 +89,8 @@ void backward()
   digitalWrite(D3, LOW);
   digitalWrite(D4, HIGH);
 }
+
+
 void left()
 {
   Serial.println("");
@@ -89,6 +100,8 @@ void left()
   digitalWrite(D3, LOW);
   digitalWrite(D4, HIGH);
 }
+
+
 void right()
 {
   Serial.println("");
