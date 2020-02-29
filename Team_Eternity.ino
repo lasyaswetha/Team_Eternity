@@ -1,8 +1,6 @@
 int xPin = A3;
 int yPin = A2; 
 int zPin = A1;
-//int ir=3;
-//int b=2;
 int D1=10, D2=11, D3=12, D4=13; 
 long x;
 long y;
@@ -12,8 +10,6 @@ long z;
 void setup()
 {
   Serial.begin(9600);
-//  pinMode(b, OUTPUT);
- // pinMode(ir, INPUT);
   pinMode(19, OUTPUT);
   pinMode(18, OUTPUT);
   digitalWrite(19, HIGH);
@@ -37,14 +33,6 @@ void loop()
   Serial.print(" z= ");
   Serial.print(z);
   delay(500);
-  //if(ir==1)
-  //{
-  //  digitalWrite(b,LOW);
-  //}
-  //if(ir==0)
-  //{
-  //  digitalWrite(b,HIGH);
-  //}
 if(x<150)  
 forward();
 else if(x>150)  
